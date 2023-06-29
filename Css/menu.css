@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color:#E73921;
+    --primary-boton:#bd3b1b;
+    --primary-boton-hover:#6E3526;
+    --h1:#F1CEC6;
+    --white:#ffffff;
+    --black:#000000;
+}
+
+body{
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto,1fr;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.6rem 1.2rem;
+    align-items: center;
+    grid-column: 1/13;
+}
+header .logo{
+    width: 80px;
+}
+header .salir-icon{
+    width: 50px;
+    align-self:flex-start ;
+}
+nav{
+    align-self: end;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:4rem;
+    font-size: 1.2em;
+    font-family: 'Irish Grover', cursive;
+}
+li{
+    padding:0.2rem 1.2rem;
+    background: linear-gradient(#892214,#ED9D92,#892214);
+}
+li a{
+    text-decoration: none;
+    color:var(--black);
+}
+li:nth-child(1){
+    font-family:'Racing Sans One', cursive;
+}
+.container{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    grid-column: 1/13;
+}
+.img-container{
+    width: 100%;
+    background-color: #942121;
+    display: flex;
+    justify-content: center;
+}
+
+

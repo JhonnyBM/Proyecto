@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Clientes</title>
+    <link rel="stylesheet" href="./Css/gestion-cliente.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion de Clientes</h1>
+        <a href="./menu.html"><img src="./Icons/atras.png" alt="atras" class="atras-icon"></a>
+    </header>
+    <aside>
+        <nav class="nav-aside">
+            <ul>
+                <li><a href="">Nuevo Cliente</a></li>
+                <li><a href="">Modificar Cliente</a></li>
+                <li><a href="">Inhabilitar</a></li>
+                <li><a href="">Eliminar Cliente</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div class="container">
+            <div class="buscar">
+                <form action="" class="form-cliente">
+                    <label for="cliente"> Cliente
+                        <input type="text" placeholder="20873221" id="cliente">
+                    </label>
+                    <button type="submit">Buscar<span></span></button>
+                </form>
+            </div>
+            <div class="datos">
+                <h2>Datos del cliente</h2>
+                <form action="" class="datos-cliente">
+                    <label for="documento"> Documento
+                        <input type="text" id="documento">
+                    </label>
+                    <label for="nombre"> Nombre
+                        <input type="text" id="nombre">
+                    </label>
+                    <label for="apellido"> Apellido
+                        <input type="text" id="apellido">
+                    </label>
+                    <label for="sexo"> Sexo
+                        <input type="text" id="sexo">
+                    </label>
+                    <label for="edad"> Edad
+                        <input type="text" id="edad">
+                    </label>
+                    <label for="direccion"> Direccion
+                        <input type="text" id="direccion">
+                    </label>
+                    <label for="telefono"> Telefono
+                        <input type="text" id="telefono">
+                    </label>
+                    <label for="email"> E-mail
+                        <input type="email" id="email">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
