@@ -1,23 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url(./general-styles.css);
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:root{
-    --bg-color:#E73921;
-    --primary-boton:#bd3b1b;
-    --primary-boton-hover:#6E3526;
-    --h1:#F1CEC6;
-    --white:#ffffff;
-    --black:#000000;
-}
-body{
-    background-color:var(--bg-color);
-    font-family:'Racing Sans One', cursive;
-}
 .container{
     width: 100%;
     height: 100vh;
@@ -28,15 +10,15 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    min-width: min(60%,800px);
-    min-height: 300px;
+    min-width: min(90%,800px);
+    min-height: 20rem;
     padding: 0.8rem;
 }
 .login h1{
     text-align: center;
     width: 90%;
     font-size: 5em;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     color:var(--h1);
     text-shadow: 2px 2px var(--black),
                 1px 0px  var(--black),
@@ -52,19 +34,21 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding:20px 8px;
-    height: 300px;
+    padding:1rem;
+    height: 20rem;
     color:var(--white);
     font-size: 1.5em;
-    width: 40%;
+    width: 60%;
+    max-width: 25rem;
+    min-width: 15rem;
 }
 .input{
-    padding:10px 16px;
+    padding:0.6rem 1rem;
     border:none;
-    border-radius: 4px;
-    box-shadow: 0 0 4px 0.1px var(--black);
+    border-radius: 8px;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,0.4);
     background-color: #D9D8D8;
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
     outline:none;
 }
 .input:focus{
@@ -72,18 +56,19 @@ body{
 }
 .input::placeholder{
     color:var(--black);
-    font-family: 'Irish Grover', cursive;
-    font-size: 1.4em;
+    font-family: var(--font-family-secondary);
+    font-size: 1.25em;
 }
 .form button{
     align-self: center;
     background-color: var(--primary-boton);
     color:var(--white);
-    width: 50%;
-    padding:8px 12px;
-    border-radius: 3px;
+    width: 80%;
+    max-width: 8rem;
+    padding:0.6rem 1rem;
+    border-radius: 8px;
     margin-top:12px;
-    font-family: 'Irish Grover', cursive;
+    font-family: var(--font-family-secondary);
     font-size: 0.8em;
     border:none;
     box-shadow: 0 0 2px 1px var(--primary-boton-hover);
@@ -91,4 +76,12 @@ body{
 .form button:hover{
     background-color: var(--primary-boton-hover);
     cursor:pointer;
+}
+@media screen and (max-width:650px) {
+    html{
+        font-size: 12px;
+    }
+    .input::placeholder{
+        font-size: 1.1em;
+    }
 }
